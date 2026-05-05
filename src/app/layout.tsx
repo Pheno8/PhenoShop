@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "PhenoShop",
-  description: "Next.js 14 app",
+  description: "Boutique en ligne PhenoShop",
 };
 
 export default function RootLayout({

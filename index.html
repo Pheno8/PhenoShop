@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhenoShop - Apercu provisoire</title>
+    <style>
+      :root {
+        --orange: #f97316;
+        --text: #0f172a;
+        --white: #ffffff;
+        --bg: #f8fafc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      header {
+        background: var(--orange);
+        color: var(--white);
+      }
+
+      .container {
+        max-width: 1152px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .header-inner {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .nav {
+        display: flex;
+        gap: 16px;
+      }
+
+      .nav a {
+        color: var(--white);
+        text-decoration: none;
+        opacity: 0.95;
+      }
+
+      .hero {
+        padding: 48px 16px;
+      }
+
+      .card {
+        max-width: 720px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <div class="brand">PhenoShop</div>
+        <nav class="nav">
+          <a href="#">Accueil</a>
+          <a href="#">Produits</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h1>Boutique en cours de lancement</h1>
+        <p>
+          Ceci est un apercu visuel provisoire en attendant le serveur Next.js.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
