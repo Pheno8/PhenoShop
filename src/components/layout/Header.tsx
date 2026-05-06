@@ -1,9 +1,13 @@
+"use client";
 import Link from "next/link";
 import { Search, ShoppingCart, User, Menu } from "lucide-react";
+import { useCartStore } from "../../lib/store";
 
 export default function Header() {
+  const items = useCartStore((state: any) => state.items);
+  const totalItems = items.length;
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur px-4">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between gap-4">
           
@@ -37,7 +41,7 @@ export default function Header() {
             <Link href="/panier" className="relative p-2 text-slate-600">
               <ShoppingCart className="h-6 w-6" />
               <span className="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full bg-orange-600 text-[10px] font-bold text-white">
-                0
+              {totalItems}
               </span>
             </Link>
           </div>
